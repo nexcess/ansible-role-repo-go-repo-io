@@ -2,5 +2,6 @@
 
 go_repo_repo_file: "/etc/yum.repos.d/go-repo.repo"
 go_repo_repo_gpg_key_url: "https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO"
+go_repo_repo_gpg_key: "/tmp/RPM-GPG-KEY-GO-REPO"
 go_repo_repo_gpg_check: "1"
 go_repo_repo_enabled: "1"
