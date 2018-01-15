@@ -1,0 +1,7 @@
+# {{ ansible_managed }}
+[go-repo]
+name=go-repo - CentOS
+baseurl=https://mirror.go-repo.io/centos/$releasever/$basearch/
+enabled={{ go_repo_repo_enabled }}
+gpgcheck={{ go_repo_repo_gpg_check }}
+gpgkey={{ go_repo_repo_gpg_key_url }}
