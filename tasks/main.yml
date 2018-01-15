@@ -15,7 +15,7 @@
 
 - name: Import the Go-repo.io GPG Key
   rpm_key:
-    key: "{{ go_repo_repo_gpg_key  }"}
+    key: "{{ go_repo_repo_gpg_key }}"
     state: present
 
 - name: Delete the On-disk Key
