@@ -1,0 +1,14 @@
+---
+
+- name: Install the Go-repo.io Repo
+  template:
+    src: "go-repo.repo.j2"
+    dest: "{{ go_repo_repo_file }}"
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Import the Go-repo.io  GPG Key
+  rpm_key:
+    key: "{{ go_repo_repo_gpg_key_url }}"
+    state: present
